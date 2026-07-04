@@ -1,0 +1,19 @@
+version: '3.8'
+
+services:
+  web:
+    container_name: web_profil_ridwan
+    build:
+      context: .
+      args:
+        SITE_NAME: "Profil Kreatif Ridwan Hakim"
+        TAGLINE: "Mahasiswa STMIK Tazkia - Siap Menyongsong Masa Depan Tech"
+        LAUNCH_DATE: "17 Agustus 2026"
+        OWNER_NAME: "Ridwan Hakim (251572010026)"
+        CONTACT_EMAIL: "ridwanhakim@tazkia.ac.id"
+        BUILD_TIME: "${BUILD_TIME}"
+    ports:
+      - "81:80"
+    environment:
+      - RUNTIME_ENV=production
+    restart: always
