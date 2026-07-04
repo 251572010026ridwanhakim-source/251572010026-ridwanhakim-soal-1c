@@ -1,0 +1,71 @@
+Username for 'https://github.com':
+Password for 'https://github.com':
+remote: No anonymous write access.
+fatal: Authentication failed for 'https://github.com/251572010026ridwanhakim-source/251572010026-ridwanhakim-soal-1c.git/'
+root@server444:~/uas-ridwanhakim# docker inspect web_profil_ridwan --format '{{json .Config.Env}}'
+["RUNTIME_ENV=production","PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin","NGINX_VERSION=1.31.2","PKG_RELEASE=1","DYNPKG_RELEASE=1","NJS_VERSION=0.9.9","NJS_RELEASE=1","ACME_VERSION=0.4.1"]
+root@server444:~/uas-ridwanhakim# cat ~/uas-ridwanhakim/index.html
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SITE_NAME_PLLACEHOLDER — Segera Hadir</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="bg-ring bg-ring--1"></div>
+  <div class="bg-ring bg-ring--2"></div>
+
+  <main class="wrapper">
+
+    <div class="badge-top">
+      <span class="badge-dot"></span> Dalam Pengembangan
+    </div>
+
+    <div class="logo">🚀</div>
+
+    <h1 class="site-name">SITE_NAME_PLACEHOLDER</h1>
+    <p class="tagline">TAGLINE_PLACEHOLDER</p>
+
+    <div class="launch-card">
+      <p class="launch-label">🗓️ Target Peluncuran</p>
+      <p class="launch-date">LAUNCH_DATE_PLACEHOLDER</p>
+    </div>
+
+    <div class="divider"></div>
+
+    <div class="features">
+      <div class="feature">
+        <span>⚡</span>
+        <p>Performa Tinggi</p>
+      </div>
+      <div class="feature">
+        <span>🔒</span>
+        <p>Aman &amp; Terpercaya</p>
+      </div>
+      <div class="feature">
+        <span>📱</span>
+        <p>Responsive</p>
+      </div>
+    </div>
+
+    <div class="divider"></div>
+
+    <p class="notify-text">Ingin mendapat notifikasi saat kami live?</p>
+    <div class="contact-chip">
+      <span>✉️</span>
+      <span>CONTACT_EMAIL_PLACEHOLDER</span>
+    </div>
+
+    <footer class="footer">
+      <p>Dibuat oleh <strong>OWNER_NAME_PLACEHOLDER</strong></p>
+      <p class="footer-sub">Dibangun dengan Docker &amp; Nginx · UAS Praktik 2026</p>
+      <p class="footer-meta">ENV: RUNTIME_ENV_PLACEHOLDER · Build: BUILD_TIME_PLACEHOLDER</p>
+    </footer>
+
+  </main>
+</body>
+</html>
+root@server444:~/uas-ridwanhakim#
